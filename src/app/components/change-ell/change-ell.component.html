@@ -23,7 +23,7 @@
 
         <button class="btn btn-outline-success" *ngIf="!ell" (click)="postEll()" [disabled]="form.invalid || 1 > form.value.stock">Add</button>
         <button class="btn btn-outline-danger" *ngIf='ell' (click)="deleteEll()">Delete</button>
-        <button class="btn btn-outline-success" *ngIf="ell" (click)="putELl()" [disabled]="form.invalid || 1 > form.value.stock">Edit</button>
+        <button class="btn btn-outline-success" *ngIf="ell" (click)="putEll()" [disabled]="form.invalid || 1 > form.value.stock">Edit</button>
 
     </form>
 

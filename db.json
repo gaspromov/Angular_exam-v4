@@ -2,19 +2,9 @@
   "products": [
     {
       "name": "name1",
-      "price": "100",
-      "weight": "111",
-      "stock": 17,
-      "madeBy": "Chine",
-      "article": "ekefjwlfkjwlfk",
-      "category": "mebel",
-      "id": 1
-    },
-    {
-      "name": "name1",
       "weight": "111",
       "price": "200",
-      "stock": 10,
+      "stock": 8,
       "article": "ekefjwlfkjwlfk",
       "madeBy": "Chine",
       "category": "technic",
@@ -24,7 +14,7 @@
       "name": "FirstTask",
       "price": "11",
       "weight": "12",
-      "stock": "1",
+      "stock": "3",
       "madeBy": "ijij",
       "article": "jij",
       "category": "book",
