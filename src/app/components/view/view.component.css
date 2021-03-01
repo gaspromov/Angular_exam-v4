@@ -1,0 +1,13 @@
+.first{
+    border: 1px solid indigo;
+}
+
+.second{
+    border: 1px solid orange;
+}
+
+.first, .second{
+    border-radius: 20px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
