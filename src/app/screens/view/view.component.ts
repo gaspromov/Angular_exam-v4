@@ -30,8 +30,9 @@ export class ViewComponent implements OnInit {
   async onChangeStock( id, type: string ){
     let item = this.items.filter( ell => ell.id == id);
     item = item[0];
-    if ( type == 'minus' )
+    if ( type == 'minus' && item.stock != 0)
       item.stock = item.stock - 1;
+    else if (  item.stock == 0 && type == 'minus' ) return;
     else item.stock++
 
     await this.http.putItem( id, item ).then( async() => await this.getItems() )

@@ -4,7 +4,7 @@
       "name": "name1",
       "weight": "111",
       "price": "200",
-      "stock": 8,
+      "stock": 17,
       "article": "ekefjwlfkjwlfk",
       "madeBy": "Chine",
       "category": "technic",
@@ -14,11 +14,21 @@
       "name": "FirstTask",
       "price": "11",
       "weight": "12",
-      "stock": "3",
+      "stock": 0,
       "madeBy": "ijij",
       "article": "jij",
       "category": "book",
       "id": 3
+    },
+    {
+      "name": "FirstTask",
+      "price": "11",
+      "weight": "12",
+      "stock": 11,
+      "madeBy": "ijij",
+      "article": "jij",
+      "category": "book",
+      "id": 4
     }
   ]
 }

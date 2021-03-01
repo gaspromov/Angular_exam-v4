@@ -10,6 +10,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlugComponent } from './screens/plug/plug.component';
 import { ViewComponent } from './screens/view/view.component';
 import { ChangeEllComponent } from './components/change-ell/change-ell.component';
+import { SortPipe } from './pipes/sort.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
+import { FilterCatPipe } from './pipes/filter-cat.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { ChangeEllComponent } from './components/change-ell/change-ell.component
     NavbarComponent,
     PlugComponent,
     ViewComponent,
-    ChangeEllComponent
+    ChangeEllComponent,
+    SortPipe,
+    FilterPipe,
+    FilterCatPipe
   ],
   imports: [
     BrowserModule,

@@ -8,12 +8,14 @@
 
         
         <select class="form-control col-3 mr-4" [(ngModel)]="sortParam">
+            <option value="">Standart</option>
             <option value="priceDown">Price down</option>
             <option value="priceUp">Price up</option>
             <option value="stockDown">Stock down</option>
             <option value="stockUp">Stock up</option>
         </select>
         <select class="form-control col-3 ml-4" [(ngModel)]="filterParam">
+            <option value="">All</option>
             <option value="phone">Phone</option>
             <option value="book">Book</option>
             <option value="technic">Technic</option>
@@ -34,8 +36,8 @@
     </div>
 
 
-    <!-- | sort : sortParam | filterStock : stockParam | filterCategory : filterParam -->
     <div class="row" *ngFor="let item of items
+    | sort:sortParam | filter:stockParam | filterCat:filterParam
     , let index = index" [ngClass]="{ 'second': index % 2 !== 0, 'first': index % 2 == 0 }">
         
         <div class="col-2">
@@ -51,9 +53,9 @@
             {{ item.price }}
         </div>
         <div class="col-2">
-            <button class="btn" (click)="onChangeStock(item.id, 'minus')">-</button>
+            <button class="btn btn-outline-danger" (click)="onChangeStock(item.id, 'minus')">-</button>
             {{ item.stock }}
-            <button class="btn" (click)="onChangeStock(item.id, 'plus')">+</button>
+            <button class="btn btn-outline-success" (click)="onChangeStock(item.id, 'plus')">+</button>
         </div>
         <div class="col-2">
             <button class="btn btn-warning" (click)="edittingEll = item; showPopup=true">Edit</button>
