@@ -20,10 +20,6 @@ export class HttpService extends API {
     return await this.get( this.url, this.httpHeaders ).toPromise();
   }
 
-  async getItem( id ){
-    return await this.get( `${this.url}/${id}`, this.httpHeaders ).toPromise()
-  }
-
   async deleteItem( id ){
     return await this.delete( `${this.url}/${id}`, this.httpHeaders ).toPromise();
   }

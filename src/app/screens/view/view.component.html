@@ -19,12 +19,15 @@
             <option value="technic">Technic</option>
             <option value="mebel">Mebel</option>
         </select>
-        <div class="col-3 ml-4 mr-4">
+        <div class="col-2 ml-4 mr-4">
 
             <label for="stock" >Stock > 0</label>
             <input type="checkbox" id="stock" class="ml-2" [(ngModel)]="stockParam">
 
         </div>
+
+
+        <button class="btn btn-outline-success col-2" (click)="showPopup = true">Add new</button>
         
 
         
@@ -53,7 +56,7 @@
             <button class="btn" (click)="onChangeStock(item.id, 'plus')">+</button>
         </div>
         <div class="col-2">
-            <button class="btn btn-warning" [routerLink]="['/edit', item.id]">Edit</button>
+            <button class="btn btn-warning" (click)="edittingEll = item; showPopup=true">Edit</button>
         </div>
 
     </div>
@@ -61,3 +64,5 @@
 
 
 </div>
+
+<app-change-ell *ngIf="showPopup" (closePopup)="showPopup=false; edittingEll = undefined" (onSuccess)="getItems()" [ell]='edittingEll'></app-change-ell>

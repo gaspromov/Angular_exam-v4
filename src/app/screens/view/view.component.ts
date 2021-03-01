@@ -12,6 +12,8 @@ export class ViewComponent implements OnInit {
   stockParam: boolean = false;
   sortParam: string = '';
   filterParam: string = '';
+  edittingEll;
+  showPopup: boolean = false;
 
   constructor(
     private http: HttpService,

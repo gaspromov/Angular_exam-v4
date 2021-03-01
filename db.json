@@ -1,16 +1,6 @@
 {
   "products": [
     {
-      "name": "Это первый никнейм",
-      "price": "232",
-      "weight": "111",
-      "stock": 10,
-      "madeBy": "Chine",
-      "article": "kuku",
-      "category": "mebel",
-      "id": 0
-    },
-    {
       "name": "name1",
       "price": "100",
       "weight": "111",
@@ -29,6 +19,16 @@
       "madeBy": "Chine",
       "category": "technic",
       "id": 2
+    },
+    {
+      "name": "FirstTask",
+      "price": "11",
+      "weight": "12",
+      "stock": "1",
+      "madeBy": "ijij",
+      "article": "jij",
+      "category": "book",
+      "id": 3
     }
   ]
 }

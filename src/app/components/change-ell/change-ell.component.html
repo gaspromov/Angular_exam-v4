@@ -1,0 +1,32 @@
+<div  class="container mt-3">
+
+    <h3 *ngIf="!ell; else edit">
+        Add new
+    </h3>
+    <ng-template #edit>
+        <h3>Edit {{ ell.name }}</h3>
+    </ng-template>
+    <form [formGroup]="form" class="row" *ngIf="form">
+
+        <input type="text" name="name" id="name" placeholder="Name" class="form-control " formControlName="name">
+        <input type="text" name="price" id="price" placeholder="Price" class="form-control " formControlName="price">
+        <input type="text" name="weight" id="weight" placeholder="Weight" class="form-control " formControlName="weight">
+        <input type="text" name="stock" id="stock" placeholder="Stock" class="form-control " formControlName="stock">
+        <input type="text" name="article" id="article" placeholder="Article" class="form-control " formControlName="article">
+        <input type="text" name="madeBy" id="madeBy" placeholder="Made by"  class="form-control" formControlName="madeBy">
+        <select class="form-control " formControlName="category">
+            <option value="phone">Phone</option>
+            <option value="book">Book</option>
+            <option value="technic">Technic</option>
+            <option value="mebel">Mebel</option>
+        </select>
+
+        <button class="btn btn-outline-success" *ngIf="!ell" (click)="postEll()" [disabled]="form.invalid || 1 > form.value.stock">Add</button>
+        <button class="btn btn-outline-danger" *ngIf='ell' (click)="deleteEll()">Delete</button>
+        <button class="btn btn-outline-success" *ngIf="ell" (click)="putELl()" [disabled]="form.invalid || 1 > form.value.stock">Edit</button>
+
+    </form>
+
+</div>
+
+<div class="artboard" (click)="closePopup.emit()"></div>

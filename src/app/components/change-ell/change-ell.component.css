@@ -1,0 +1,32 @@
+.container{
+    background-color: white;
+    border: 1px solid olivedrab;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    display: grid;
+    place-content: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.artboard{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(152, 251, 152, 0.438);
+    backdrop-filter: blur(10px);
+}

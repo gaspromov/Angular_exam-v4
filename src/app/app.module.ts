@@ -6,18 +6,18 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainComponent } from './screens/main/main.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { PlugComponent } from './components/plug/plug.component';
-import { ViewComponent } from './components/view/view.component';
+import { PlugComponent } from './screens/plug/plug.component';
+import { ViewComponent } from './screens/view/view.component';
+import { ChangeEllComponent } from './components/change-ell/change-ell.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
     NavbarComponent,
     PlugComponent,
-    ViewComponent
+    ViewComponent,
+    ChangeEllComponent
   ],
   imports: [
     BrowserModule,
